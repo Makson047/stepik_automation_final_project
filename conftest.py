@@ -55,21 +55,3 @@ def browser(request):
     yield browser
     print("\nQuit browser..")
     browser.quit()
-
-
-@pytest.fixture(scope="function")
-def chrome():
-    print("\nStart browser for test..")
-    chrome = webdriver.Chrome()
-    yield chrome
-    print("\nQuit browser..")
-    chrome.quit()
-
-
-@pytest.fixture(scope="function")
-def firefox():
-    print("\nStart browser for test..")
-    firefox = webdriver.Firefox()
-    yield firefox
-    print("\nQuit browser..")
-    firefox.quit()
