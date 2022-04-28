@@ -12,7 +12,7 @@ class BasePage(object):
         try:
             self.browser.find_element(how, what)
         except Exception as error:
-            print(error)
+            print(f'Error: {error}')
             return False
         return True
 
