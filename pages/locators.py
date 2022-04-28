@@ -9,7 +9,7 @@ class BasePageLocators:
 
 class BasketPageLocators:
     BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
-    EMPTY_BASKET_TEXT = (By.CSS_SELECTOR, "#content_inner")
+    EMPTY_BASKET_TEXT = (By.XPATH, "//p[contains(text(),'empty')]")
 
 
 class MainPageLocators:
