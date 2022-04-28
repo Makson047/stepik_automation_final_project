@@ -13,7 +13,6 @@ class LoginPage(BasePage):
         LOGIN_STR = 'login'
         link = self.browser.current_url
         assert LOGIN_STR in link, f'Current link don`t have substring "{LOGIN_STR}"'
-        # assert self.is_element_present(*LoginPageLocators.LOGIN_LINK), "Login link is not presented"
 
     def should_be_login_form(self):
         # проверка, что есть форма логина
